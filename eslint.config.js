@@ -3,6 +3,7 @@ import globals from 'globals'
 import js from '@eslint/js'
 import pluginVue from 'eslint-plugin-vue'
 import skipFormatting from '@vue/eslint-config-prettier/skip-formatting'
+import { rules } from 'eslint-plugin-vue'
 
 export default defineConfig([
   {
@@ -19,7 +20,16 @@ export default defineConfig([
       },
     },
   },
-
+  {
+    rules:{
+      'vue/multi-word-component-names':[
+        'warn',
+        {
+          ignores: ['index'],
+        }
+      ]
+    }
+  },
   js.configs.recommended,
   ...pluginVue.configs['flat/essential'],
   skipFormatting,
