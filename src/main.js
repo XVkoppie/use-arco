@@ -4,7 +4,7 @@ import App from './App.vue'
 import router from './router'
 import Icons from './components/icons'
 import './assets/main.css'
-
+import '@/styles/main.less'
 const app = createApp(App)
 
 app.use(Icons)
