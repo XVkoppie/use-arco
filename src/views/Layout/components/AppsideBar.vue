@@ -4,8 +4,6 @@ import AppsideBarMenu from './AppsideBarMenu.vue'
 
 <template>
   <a-layout-sider width="200" theme="light">
-    <div>logo</div>
-    <div>menu</div>
     <AppsideBarMenu/>
   </a-layout-sider>
 </template>
