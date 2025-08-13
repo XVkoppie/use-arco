@@ -1,10 +1,10 @@
 //图表组件注册成全局组件
-import { DownCircleTwoTone, InteractionTwoTone ,HomeOutlined,
-  CarOutlined,BarChartOutlined,ScheduleOutlined,SendOutlined} from '@ant-design/icons-vue'
+import { DownCircleTwoTone,UserOutlined, InteractionTwoTone ,HomeOutlined,
+  CarOutlined,BarChartOutlined,UsergroupDeleteOutlined,ScheduleOutlined,SendOutlined} from '@ant-design/icons-vue'
 
-const icons=[DownCircleTwoTone, InteractionTwoTone,
+const icons=[DownCircleTwoTone, UserOutlined, InteractionTwoTone,
     HomeOutlined, CarOutlined, BarChartOutlined,
-    ScheduleOutlined, SendOutlined]
+    UsergroupDeleteOutlined, ScheduleOutlined, SendOutlined]
 
 export default{
   install(app) {

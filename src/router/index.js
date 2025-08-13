@@ -12,14 +12,18 @@ const router = createRouter({
    {
     path:'/',
     meta:{
-      title:'首页'
+      name:'Home',
+      title:'首页',
+      icon:'HomeOutlined'
     },
     component:()=>import('@/views/Layout/index.vue')
   },
    {
     path:'/login',
+    name:'Login',
     meta:{
-      title:'登录'
+      title:'登录',
+      icon:'UserOutlined'
     },
     component:()=>import('@/views/Login/index.vue')
   },
