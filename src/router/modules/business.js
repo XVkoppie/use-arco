@@ -1,0 +1,21 @@
+export default{
+  name:'business',
+  path:'/business',
+  component:()=>import('@/views/Layout/index.vue'),
+  redirect:'/business/orderlist',
+  meta:{title:'业务管理',icon:'ScheduleOutlined',order:4},
+  children:[
+    {
+      name:'business-orderlist',
+      path:'/business/orderlist',
+      meta:{title:'运费管理',parent:'business'},
+      component:()=>import('@/views/Business/WayBill/index.vue'),
+    },
+    {
+      name:'business-businesslist',
+      path:'/business/businesslist',
+      meta:{title:'订单管理',parent:'business'},
+      component:()=>import('@/views/Business/Order/index.vue'),
+    }
+  ]
+}

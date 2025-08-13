@@ -4,6 +4,7 @@ import 'nprogress/nprogress.css'
 NProgress.configure({
   showSpinner: false
 })
+import {asyncRoutes} from './asyncRoutes'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -21,7 +22,8 @@ const router = createRouter({
       title:'登录'
     },
     component:()=>import('@/views/Login/index.vue')
-  }
+  },
+  ...asyncRoutes,
   ],
 })
 //路由守卫
