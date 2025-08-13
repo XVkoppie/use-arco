@@ -28,7 +28,7 @@ export default defineComponent({
                   {travel(element.children)}
                 </a-sub-menu>
               ) : (
-                <a-menu-item key={element.path} >
+                <a-menu-item key={element.path}>
                   <router-link to={element.path}>{title}</router-link>
                 </a-menu-item>
               )

@@ -9,6 +9,8 @@ import AppsideBar from './components/AppsideBar.vue'
       <div>页头</div>
     <a-layout-content class="content">
       <div>内容</div>
+      <a-button v-permission="['admin']">user 按钮</a-button>
+      <a-button v-permission="['user']">user 按钮</a-button>
     </a-layout-content>
     <a-layout-footer>
       <div>页脚</div>
